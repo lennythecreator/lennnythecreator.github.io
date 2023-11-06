@@ -8,6 +8,7 @@
 }
 
 body{
+    /*Lets do something with this later*/
     overflow: hidden;
 }
 
@@ -229,73 +230,3 @@ button:hover{
     display: flex;
     position: relative;
 }
-/*Skills CSS*/
-.My-Skills{
-    position: relative;
-    display: flex;
-    justify-content: center;
-}
-.Cards_wrapper{
-    display: flex;
-    justify-content: center;
-    margin: 15px;
-
-}
-.Card::before,
-.Card::after{
-    box-sizing: border-box;
-
-}
-.Card{
-    font-size: 25px;
-    display: grid;
-    border-radius: 50%;
-    min-height: 300px;
-    padding: 8rem 0 0;
-    width: 50%;
-    margin: 10px;
-    place-items:center;
-    line-height: 1.6;
-    /*background-image: linear-gradient(to right,rgb(250, 48, 250) 0%,rgb(198, 61, 198) 50%,rgb(198, 142, 198) 100%);*/
-    background-color: #A42BA4;
-    transition:transform 1s ease-in;
-    transition: background-color 2s ease-out;
-    /*Animation*/
-    animation-name: hover-up-down-animation;
-    animation-duration: 2s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-}
-.Card > ul > h2 {
-    bottom: 15px;
-    font-size: 25px;
-}
-#lang{
-    font-size: 110px;
-    display: flex;
-    position: relative;
-    bottom:30px;
-    justify-content: center;
-    
-}
-
-.Card:hover{
-    transform: scale(1.05);
-    background-color: #7f00ff;
-    transform: translateY(-5px);
-    
-}
-@keyframes hover-up-down-animation {
-    0% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(-5px);
-      
-    }
-    100% {
-      transform: translateY(0);
-    }
-}
-
-  
