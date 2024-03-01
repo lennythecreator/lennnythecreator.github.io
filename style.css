@@ -206,7 +206,7 @@ button:hover{
 .imgbox img{
     position: relative;
     height: 100%;
-    border-radius: 25%;
+    border-radius: 50%;
     border-color:violet;
     
     width: calc(130% - 340px);
